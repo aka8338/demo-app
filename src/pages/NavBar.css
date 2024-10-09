@@ -1,0 +1,60 @@
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: #fff; /* Background color for the search bar */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+
+.navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+
+}
+.dropdown {
+    margin-right: 10px;
+    margin-left: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.search-button {
+    background-color: #007BFF; /* Adjust as needed */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.register-button {
+    background-color: red; /* Red color for the register button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.login-button {
+    background-color: red; /* Red color for the login button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
