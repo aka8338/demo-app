@@ -1,13 +1,9 @@
 import './App.css';
-import NavBar from './pages/NavBar';
-
+import Routes from './Routes';
 function App() {
   return (
-  <>
-  <NavBar/>
-  
-  </>
+    <Routes />
   );
-}
+};
 
 export default App;

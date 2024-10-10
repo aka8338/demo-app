@@ -1,0 +1,443 @@
+body{
+  background-color:  #212936;
+}
+.LandingPage {
+    padding: 20px;
+    background-color: #F1F4F8;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    gap: 20px; /* Space between cards */
+    padding: 20px;
+  }
+  
+  .product-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    height: auto;
+   
+    border-radius: 5px;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  .price {
+    color: red;
+    font-weight: bold;
+  }
+  
+  .phone {
+    color: green;
+  }
+  
+  .read-more {
+    background-color: #00aaff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  
+  .read-more:hover {
+    background-color: #0088cc;
+  }
+  
+  @media screen and (max-width: 1024px) {
+    .product-grid {
+      grid-template-columns: repeat(3, 1fr); /* 2 columns for medium screens */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .product-grid {
+      grid-template-columns: 1fr; /* 1 column for small screens */
+    }
+  }
+  /* For mobile screens (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .product-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns for mobile screens */
+  }
+}
+  
+
+
+
+/* General Footer Styling */
+.footer {
+  background-color:black; /* Dark black background */
+  color: #fff; /* White text */
+  padding: 40px 20px;
+}
+.footer p,
+.footer h2 {
+  color: white;
+  font-size: medium;
+ 
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal columns */
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto; /* Center align */
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  width: 150px;
+  margin-bottom: 15px;
+}
+
+/* Footer Links Styling */
+.footer-column h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffcc00; /* A yellowish color to make headings stand out */
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+  color: #ffcc00; /* Highlight links on hover */
+}
+
+/* Social Media Icons Styling */
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a img {
+  width: 40px;
+  height: 40px;
+  filter: brightness(1.5) invert(1);
+  -webkit-filter: brightness(1.5) invert(1);
+}
+
+.social-icons a img:hover {
+  filter: brightness(1); /* Restore original color on hover */
+}
+
+/* Subscribe Button */
+.subscribe-button {
+  background-color: #ff0000;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.subscribe-button:hover {
+  background-color: #cc0000; /* Darker red on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr 1fr; /* Two columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-container {
+    grid-template-columns: 1fr; /* One column on mobile */
+  }
+}
+
+
+
+
+.services-section {
+  display: flex;
+  justify-content: space-around; /* Spacing the items evenly */
+  background-color: #F1F4F8; /* Light background */
+  padding: 40px 0;
+  text-align: center;
+}
+
+.service-item {
+  max-width: 200px; /* Limit the width for each item */
+  padding: 20px;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+.service-item h3 {
+  color: black;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.service-item p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Responsive for Small Screens */
+@media (max-width: 768px) {
+  .services-section {
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center;    /* Center items horizontally */
+  }
+
+  .service-item {
+    margin-bottom: 20px;
+    max-width: 100%;  /* Allow the items to stretch fully */
+  }
+}
+
+
+/* About us css */
+/* Container for the about us page */
+.about-us-container {
+  max-width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+/* Header section styling */
+.about-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.about-title {
+  font-size: 36px;
+  font-weight: bold;
+  color:black;
+}
+
+.about-tagline {
+  font-size: 18px;
+  color:black;
+  margin-top: 10px;
+}
+
+/* Content section styling */
+.about-content {
+  text-align: left;
+}
+
+.section-title {
+  font-size: 24px;
+  color:black;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.8;           /* Increase line height for better readability */
+  letter-spacing: 0.5px;      /* Slightly increase letter spacing */
+  margin-bottom: 30px;
+  text-align: justify;        /* Align text with a justified layout */
+  color: black;                /* Softer color for the text */
+  max-width: 750px;           /* Limit the width of the text */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.about-list li {
+  font-size: 18px;
+  line-height: 1.8;           /* Increase line height for better readability */
+  letter-spacing: 0.5px;      /* Slightly increase letter spacing */
+  margin-bottom: 30px;
+  text-align: justify;        /* Align text with a justified layout */
+  color: black;                /* Softer color for the text */
+  max-width: 750px;           /* Limit the width of the text */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+
+/* contact us */
+/* Main contact container to hold form and contact info */
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+/* Styling the form section */
+.contact-form-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-header {
+  color:black;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.icon-placeholder {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 96%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.submit-btn {
+  background-color: red;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.submit-btn:hover {
+  background-color: darkred;
+}
+
+/* Styling the contact information section */
+.contact-info-section {
+  flex: 1;
+  padding: 20px;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.contact-info-section p{
+  color: black;
+}
+.info-header {
+  font-size: 24px;
+  color:black;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-details .contact-detail {
+  margin-bottom: 20px;
+}
+
+.contact-detail strong {
+  display: block;
+  font-size: 18px;
+  color:black;
+}
+
+.contact-detail p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+  .contact-container {
+      flex-direction: column;
+      gap: 40px;
+  }
+}
